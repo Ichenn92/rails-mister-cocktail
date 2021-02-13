@@ -1,0 +1,11 @@
+<%= render 'components/banner' %>
+
+<h1>Cocktails</h1>
+
+<div class="row">
+  <% @cocktails.each do |cocktail| %>
+    <div class="col-12 col-md-4">
+      <%= render partial: 'product_card', locals: { cocktail: cocktail } %>
+    </div>
+  <% end %>
+</div>
