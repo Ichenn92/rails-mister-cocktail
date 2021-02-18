@@ -34,6 +34,6 @@ before_action :new_cocktail, only: %i[index show]
   end
 
   def cocktail_params
-    params.require(:cocktail).permit(:name)
+    params.require(:cocktail).permit(:name, :photo)
   end
 end
